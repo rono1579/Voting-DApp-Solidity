@@ -43,3 +43,9 @@ Clone the repository and install dependencies:
 git clone https://github.com/TheODDYSEY/Voting-DApp-Solidity
 cd Voting-DApp-Solidity
 npm install
+API_URL=http://127.0.0.1:7545
+PRIVATE_KEY=your_ganache_private_key
+npx hardhat compile
+npx hardhat run scripts/deploy.js --network ganache
+npx hardhat test --network ganache
+npm start
